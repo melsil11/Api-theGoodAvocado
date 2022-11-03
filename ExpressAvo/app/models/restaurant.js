@@ -71,6 +71,10 @@ const restaurantSchema = new mongoose.Schema(
 			type: Boolean,
 			default: false
 		},
+		website: {
+			type: String,
+			required: false
+		},
 	
 
 		reviews: [reviewSchema],
