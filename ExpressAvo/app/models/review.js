@@ -22,6 +22,10 @@ const reviewSchema = new mongoose.Schema({
     ownerEmail: {
         type: String,
         required: false
+    },
+    image: {
+        type: String,
+        required: false
     }
 
 }, {
