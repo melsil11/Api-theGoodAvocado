@@ -90,20 +90,6 @@ router.post('/restaurants', requireToken, (req, res, next) => {
         res.status(201).json({ restaurant: restaurant })
     })
     .catch(next)
-    // ^^^ shorthand for:
-        //^ .catch(error => next(error))
-})
-
-// Index - shows only the user's restaurants
-// GET
-router.get('/mine', (req, res, next) => {
-    // destructure user info from req.session
-	Restaurant.find({ owner: userId })
-    populate(owner)
-        .then(restaurants => {
-            res.status(200).json({ restaurants: restaurants })
-        })
-		.catch(next)
 })
 
 // Update
