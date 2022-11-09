@@ -19,6 +19,7 @@
     "method-override": "^3.0.0",
     "mongodb": "^4.11.0",
     "mongoose": "^6.7.0",
+    "nodemon": "^2.0.20",
     "passport": "^0.6.0",
     "passport-http-bearer": "^1.0.1"
   }
